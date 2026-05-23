@@ -1,0 +1,20 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#FFD700', // Yellow
+        secondary: '#0033A0', // Blue
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+}
+

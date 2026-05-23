@@ -1,0 +1,26 @@
+{
+  "name": "numero-uno-website",
+  "version": "1.0.0",
+  "description": "Full-stack website for Numero Uno Portrait Studio",
+  "scripts": {
+    "install:all": "cd frontend && npm install && cd ../backend && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "start:backend": "cd backend && npm start"
+  },
+  "keywords": [
+    "photography",
+    "portrait-studio",
+    "e-commerce",
+    "stripe",
+    "firebase"
+  ],
+  "author": "Numero Uno Portrait Studio",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/numero-uno-website"
+  }
+}
+
