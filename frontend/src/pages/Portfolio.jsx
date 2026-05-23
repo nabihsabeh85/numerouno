@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 export default function Portfolio() {
@@ -168,18 +169,18 @@ export default function Portfolio() {
             Book your session today and become part of our portfolio
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="px-8 py-4 bg-primary text-secondary font-bold rounded-lg text-lg hover:bg-yellow-500 transition-all hover:scale-105 shadow-lg"
             >
               Book a Session
-            </a>
-            <a
-              href="/services"
+            </Link>
+            <Link
+              to="/services"
               className="px-8 py-4 bg-secondary text-white font-bold rounded-lg text-lg hover:bg-blue-900 transition-all hover:scale-105 shadow-lg"
             >
               View Services
-            </a>
+            </Link>
           </div>
         </div>
       </section>

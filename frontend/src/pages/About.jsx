@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FaCamera, FaHeart, FaAward, FaUsers } from 'react-icons/fa';
 
 export default function About() {
@@ -163,18 +164,18 @@ export default function About() {
             Join thousands of satisfied customers who trust us with their precious memories.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="px-8 py-4 bg-primary text-secondary font-bold rounded-lg text-lg hover:bg-yellow-500 transition-all hover:scale-105 shadow-xl"
             >
               Visit Our Studio
-            </a>
-            <a
-              href="/services"
+            </Link>
+            <Link
+              to="/services"
               className="px-8 py-4 bg-white text-secondary font-bold rounded-lg text-lg hover:bg-gray-100 transition-all hover:scale-105 shadow-xl"
             >
               View Services
-            </a>
+            </Link>
           </div>
         </div>
       </section>

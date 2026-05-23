@@ -12,9 +12,11 @@ import OrderSuccess from './pages/OrderSuccess';
 import Admin from './pages/Admin';
 import ScrollToTop from './components/ScrollToTop';
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 function App() {
   return (
-    <Router>
+    <Router basename={basename || undefined}>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />

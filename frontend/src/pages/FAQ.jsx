@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 export default function FAQ() {
@@ -212,12 +213,12 @@ export default function FAQ() {
             >
               Call Us: (123) 456-7890
             </a>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="px-8 py-4 bg-secondary text-white font-bold rounded-lg text-lg hover:bg-blue-900 transition-all hover:scale-105 shadow-lg"
             >
               Send a Message
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -227,27 +228,27 @@ export default function FAQ() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8 text-center">Explore More</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <a
-              href="/services"
+            <Link
+              to="/services"
               className="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all text-center"
             >
               <h3 className="text-xl font-bold mb-2 text-primary">View Services</h3>
               <p className="text-gray-200">See all our photography and printing services</p>
-            </a>
-            <a
-              href="/portfolio"
+            </Link>
+            <Link
+              to="/portfolio"
               className="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all text-center"
             >
               <h3 className="text-xl font-bold mb-2 text-primary">View Portfolio</h3>
               <p className="text-gray-200">Browse our collection of beautiful portraits</p>
-            </a>
-            <a
-              href="/upload"
+            </Link>
+            <Link
+              to="/upload"
               className="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all text-center"
             >
               <h3 className="text-xl font-bold mb-2 text-primary">Order Prints</h3>
               <p className="text-gray-200">Upload and order prints online for pickup</p>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
